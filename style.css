@@ -1,0 +1,235 @@
+/*
+Theme Name: EDSV Blog
+Author: EDSV
+*/
+body{
+    font-family: 'Mandali', sans-serif;
+    color: #4b4b4b;
+    margin: 0;
+}
+a:hover {
+    text-decoration: none;
+}
+.navbar {
+    height: auto;
+    background-color: #000;
+} 
+#logo-img img {
+    width: 150px;
+    height: auto;
+
+}
+
+.navbar li {
+    padding-right: 30px;
+    text-transform: uppercase;
+}
+.navbar li a {
+    color: #4b4b4b;
+}
+.navbar li a:hover {
+    color: #FFF;
+}
+nav {
+    padding-bottom: -5px;
+    padding-top: -5px;
+}
+
+.active {
+    color: #FFF;
+}
+#main-banner {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: url('img/coding-banner-main.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-blend-mode: overlay;
+    color: #FFF;
+}
+#main-banner h1 {
+    padding-top: 20px;
+    font-family: 'Anton', sans-serif;
+    font-size: 500%;
+    text-shadow: .2rem .2rem .9rem black;
+}
+#main-banner h3 {
+    font-family: 'Anton', sans-serif;
+    font-size: 250%;
+    text-shadow: .1rem .1rem .8rem black;
+}
+#banner {
+    padding-top: 20px;
+}
+#banner img {
+    opacity: 0.8;
+}
+#banner h3 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #FFF;
+    text-shadow: .1rem .1rem .5rem black;
+}
+#banner p {
+    font-weight: bold;
+    font-size: 26px;
+    text-shadow: .1rem .1rem .5rem black;
+}
+
+h2 {
+    color: #4b4b4b;
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 50px 0 20px 0;
+}
+.card-deck {
+    padding-bottom: 20px;
+}
+.page-image {
+    transition: 0.4s;
+}
+.page-content {
+    margin: 10px 0;
+}
+.jumbotron {
+    margin-bottom: 0;
+    padding: 0;
+}
+.comments-section {
+    padding: 10px ;
+    justify-content: center;
+}
+#respond {
+    justify-content: center;
+}
+#respond h3 {
+    font-weight: bold;
+    font-size: 26px;
+}
+.comment-form input,
+.comment-form textarea {
+    width: 100%;
+    margin-bottom: 16px;
+    border: 2px solid #000;
+}
+.comment-note {
+    text-align: center;
+    color: red;
+}
+.comments-section textarea {
+    height: 160px;;
+    width: 100%;
+}
+.form-submit .submit,
+.wpcf7 .wpcf7-submit {
+    background:#000;
+    color: #FFF;
+    font-weight: bold;
+    width: 100%;
+    padding: 8px;
+    border: 2px solid black;
+    height: 48px;
+    cursor: pointer;
+    transition: 0.4s;
+    box-shadow: initial;
+}
+.form-submit .submit:hover,
+.wpc7 .wpc7-submit:hover {
+    background:#FFF;
+    color:#4b4b4b;
+}
+.comment-reply-title {
+    text-align: center;
+}
+#sidebar {
+    background:#000;
+    flex: 1;
+    padding: 8px 16px;
+    color: #FFF;
+}
+#sidebar a {
+    color: #4b4b4b;
+
+}
+#sidebar li {
+    margin: 8px 0;
+    list-style: none;
+}
+#sidebar li li {
+  margin-left: -16px;  
+}
+#sidebar h3 {
+    font-size: 22px;
+}
+#sidebar input {
+    width: 100%;
+    height: 42px;;
+}
+#sidebar form {
+    position: relative;
+}
+#sidebar #search-btn {
+    background: url('img/search-icon-2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+
+}
+
+footer {
+    color: #FFF;
+    background-color: #000;
+}
+footer p {
+    padding-top: 20px;
+}
+@media (max-width:575px) {
+    .container {
+        width: 100%;
+    }
+    #main-banner h1 {
+        font-size: 3em;
+    }
+    #main-banner h3 {
+        font-size: 1.5em;
+    }
+    .navbar {
+        background-color: #FFF;
+        border-bottom: solid 1px #4b4b4b;
+    }
+    .navbar-toggler {
+        display: flex;
+        border-color: #4b4b4b;
+    }
+    .navbar li a:hover {
+        color:#4b4b4b;
+    }
+    #sidebar {
+        display: none;
+    }
+}
+@media (min-width: 576px) {
+    .navbar-toggler {
+        display: none;
+    }
+@media (max-width: 991px) {
+     #logo-img img {
+        display: none;
+    }
+    #sidebar {
+        display: none;
+    }
+
+}
+}
